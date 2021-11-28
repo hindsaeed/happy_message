@@ -1,0 +1,215 @@
+/*body{
+    background-color: azure;
+}
+header{
+    font-size: large;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(54, 100%, 50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+header h1{
+    margin: 141px;
+    text-shadow: 2px 2px 5px rgb(173, 0, 0);
+   border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    padding: 38px;
+    border-width: 10px;
+    transition: width 2s ,height 5s,transform 3s;
+    
+}*/
+:root {
+    --effect: hover 1s linear infinite;
+  }
+  *{
+     margin:0;
+  }
+  
+  body {
+  
+    
+    background: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .header{
+    text-align: center;
+    /*background-color: blue;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 30px;
+  }
+  
+  p {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4em;
+    font-family: arial;
+    font-weight: 600;
+    transform: scale(.5);
+    color: #121212;
+    -webkit-text-stroke: 2px gray;
+    
+  }
+  
+  p:nth-child(1) {
+    animation: var(--effect);
+  }
+  
+  p:nth-child(2) {
+    animation: var(--effect) .125s;
+  }
+  
+  p:nth-child(3) {
+    animation: var(--effect) .25s;
+  }
+  
+  p:nth-child(4) {
+    animation: var(--effect) .375s;
+  }
+  
+  p:nth-child(5) {
+    animation: var(--effect) .5s;
+  }
+  
+  p:nth-child(6) {
+    animation: var(--effect) .675s;
+  }
+  
+  p:nth-child(7) {
+    animation: var(--effect) .75s;
+  }
+  
+  p:nth-child(8) {
+    animation: var(--effect) .85s;
+  }
+  p:nth-child(9) {
+    animation: var(--effect) .95s;
+  }
+  p:nth-child(10) {
+    animation: var(--effect) 1.5s;
+  }
+  p:nth-child(11) {
+    animation: var(--effect) 1.15s;
+  }
+  p:nth-child(12) {
+    animation: var(--effect) 1.25s;
+  }
+  p:nth-child(13) {
+    animation: var(--effect) 1.35s;
+  }
+  p:nth-child(14) {
+    animation: var(--effect) 1.45s;
+  }
+  p:nth-child(15) {
+    animation: var(--effect) 1.55s;
+  }
+  p:nth-child(16) {
+    animation: var(--effect) 1.65s;
+  }
+  p:nth-child(17) {
+    animation: var(--effect) 1.75s;
+  }
+  p:nth-child(18) {
+    animation: var(--effect) 1.85s;
+  }
+  p:nth-child(19) {
+    animation: var(--effect) 1.95s;
+  }
+  p:nth-child(20) {
+    animation: var(--effect) 2.5s;
+  }
+
+  @keyframes hover {
+    0% {
+      transform: scale(.5);
+      color: #121212;
+      -webkit-text-stroke: 2px gray;
+    }
+  
+    20% {
+      transform: scale(1);
+      color: pink;
+      -webkit-text-stroke: 3px red;
+      filter: drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 5px red)hue-rotate(10turn);
+    }
+  
+    50% {
+      transform: scale(.5);
+      color: #121212;
+      -webkit-text-stroke: 2px gray;
+    }
+  
+  
+  }
+.main h4{
+    text-align: center;
+   font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.part{
+    text-align: center;
+    
+}
+select {
+    background-color: #9b59b6;
+color: white;
+border: none;
+text-align: center;
+-webkit-appearance: none;
+-webkit-border-radius: 0px;
+padding: 10px 35px 10px 35px;
+font-size: 40px;
+    /*width: 150px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    line-height: 50px;
+    text-align: center;
+    width: 170px;*/
+  }
+  /*{
+    position: relative;
+    display: block;
+    width: 170px;
+    padding: 0 84px 0 22px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #5f5f5f;
+    line-height: 50px;
+    background: #EAEAEA;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:20px;
+    border: 1px solid #5f5f5f;
+    transition: all 0.3s;
+  }*/
+
+.quick-contact{
+    text-align: center;
+}
+.message{
+    margin: 20px;
+    font-size: 45px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+ul label{
+    color: cornsilk;
+    padding: 20px;
+    font-size: 40px;
+    display: inline;
+}

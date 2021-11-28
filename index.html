@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Happy Message</title>
+</head>
+<body>
+    
+        <div class="header">
+        <p>h</p>
+        <p>a</p>
+        <p>p</p> 
+        <p>p</p>
+        <p>y</p>
+        <p>m</p>
+        <p>e</p>
+        <p>s</p>
+        <p>s</p>
+        <p>a</p> 
+        <p>g</p>
+        <p>e</p>
+        <p>f</p>
+        <p>o</p>
+        <p>r</p>
+        <p>y</p>
+        <p>o</p> 
+        <p>u</p>
+        </div>
+        
+        <ul class="quick-contact">
+           
+             <li class="sites">
+            <label for="">You’re</label>  <select id="inputbox" onchange="updateyourfeeling()">
+                <option value="happy">happy</option>
+                <option value="angry">angry</option>
+                <option value="weak">weak</option>
+                <option value="lonely">lonely</option>
+                <option value="love">love</option>
+              </select>
+          </li>
+          <li class="message">
+            <span id="yourfeeling" style="color: aliceblue;">your meesage</span></li>
+        </ul>
+      <!--<div class="part">
+        <form action="">
+          
+            <select name="tags" id="tags" onmousedown="if(this.options.length>6){this.size=6;}" onchange="changeCategory(this.value)">
+                <option value="">[Select Emotion]</option><option value="angry">angry</option>
+                <option value="anticipation">anticipation</option>
+                <option value="anxious">anxious</option>
+                <option value="aroused">aroused</option>
+                <option value="confident">confident</option>
+                <option value="confused">confused</option>
+                <option value="content">content</option>
+                <option value="curious">curious</option>
+                <option value="defeated">defeated</option>
+                <option value="depressed">depressed</option>
+                <option value="desire">desire</option>
+                <option value="desperate">desperate</option>
+                <option value="determined">determined</option>
+                <option value="disbelief">disbelief</option>
+                <option value="doubtful">doubtful</option>
+                <option value="envious">envious</option>
+                <option value="grateful">grateful</option>
+                <option value="guilty">guilty</option>
+                <option value="happy">happy</option>
+                <option value="hatred">hatred</option>
+                <option value="humiliated">humiliated</option>
+                <option value="hurt">hurt</option>
+                <option value="impatient">impatient</option>
+                <option value="indecisive">indecisive</option>
+                <option value="insecure">insecure</option>
+                <option value="irritated">irritated</option>
+                <option value="jealous">jealous</option>
+                <option value="lazy">lazy</option>
+                <option value="lonely">lonely</option>
+                <option value="love">love</option>
+                <option value="nervous">nervous</option>
+                <option value="nostalgic">nostalgic</option>
+                <option value="offended">offended</option>
+                <option value="overwhelmed">overwhelmed</option>
+                <option value="peaceful">peaceful</option>
+                <option value="rage">rage</option>
+                <option value="regretful">regretful</option>
+                <option value="sad">sad</option>
+                <option value="satisfied">satisfied</option>
+                <option value="uncertain">uncertain</option>
+                <option value="uneasy">uneasy</option>
+                <option value="weak">weak</option></select>
+           
+          </form>
+        </div>-->
+        
+            <!--<h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>
+        <h1>happy message for you</h1>-->
+    
+    <!--<div class="main">
+        <form action=""></form>
+    </div>
+    <form action="">
+
+    </form>-->
+    <script>
+    var yourfeeling = {  // store all phone numbers in an object here
+        'happy': 'you are always happy, This is my wish for you',   // you can easily add/remove/modify the country/numbers here
+        'angry': 'you are always angry,this is my wish for you',
+        'weak': 'you are always weak,this is my wish for you',
+        'lonely': 'you are always lonely,this is my wish for you',
+        'love': 'you are always lovely,this is my wish for you'
+      }
+      
+      function updateyourfeeling(){  // this will be called when dropdown value will be changed
+        var inputBox = document.getElementById("inputbox"); 
+        
+        // get the selected option
+        var selectedOption = inputBox.options[inputBox.selectedIndex].value;
+        
+        // update the number on the webpage
+        document.getElementById("yourfeeling").innerHTML = yourfeeling[selectedOption];
+      }
+      </script>
+</body>
+</html>
